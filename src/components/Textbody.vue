@@ -1,23 +1,26 @@
 <template>
-  <p :stye="textProps">{{ text }}</p>
+  <h2 :style="fontProps">{{ textContent }}</h2>
 </template>
 
 <script>
 export default {
   props: {
-    size: String,
-    text: String
+    fontSize: String,
+    textContent: String
   },
   computed: {
-    textProps() {
-      return "--text-size: " + this.size + "px";
+    fontProps() {
+      return "--text-size: " + this.fontSize + "px";
     }
   }
 };
 </script>
 
 <style scoped>
-p {
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+h2 {
   font-size: var(--text-size);
+  font-family: "Poppins", sans-serif;
 }
 </style>

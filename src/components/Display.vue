@@ -17,7 +17,10 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css?family=Paytone+One");
+
 h1 {
+  font-family: "Paytone One", sans-serif;
   font-size: var(--text-size);
 }
 </style>

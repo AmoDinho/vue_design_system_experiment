@@ -1,21 +1,21 @@
 <template>
   <div id="app">
     <h1>Design System Experiment</h1>
-    <Display text="Display X-Large" size="48" />
-    <Display text="Display Large" size="32" />
-    <Display text="Display Medium" size="24" />
-    <Display text="Display Small" size="16" />
+    
+    <router-link to="/"> <a>Home</a> </router-link>
+    </br>
+    <router-link to="/text"> <a>Text Typography</a> </router-link>
+     </br>
+    <router-link to="/display"> <a>Display Typography </a> </router-link>
+   <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Display from "./components/Display";
 
 export default {
   name: "App",
-  components: {
-    Display
-  }
+  
 };
 </script>
 

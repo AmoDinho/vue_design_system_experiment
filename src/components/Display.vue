@@ -1,10 +1,13 @@
 <template>
-  <h1 :style="textProps">Display X-Large</h1>
+  <h1 :style="textProps">{{ text }}</h1>
 </template>
 
 <script>
 export default {
-  props: ["size"],
+  props: {
+    size: String,
+    text: String
+  },
   computed: {
     textProps() {
       return "--text-size: " + this.size + "px";

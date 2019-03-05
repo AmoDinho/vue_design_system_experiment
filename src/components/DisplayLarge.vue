@@ -1,5 +1,5 @@
 <template>
-  <h1 :style="textProps">This is a heading text</h1>
+  <h1 :style="textProps">Display X-Large</h1>
 </template>
 
 <script>

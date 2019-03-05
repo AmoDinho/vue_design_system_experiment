@@ -1,19 +1,16 @@
 <template>
   <div id="app">
-    <img width="25%" src="./assets/logo.png" /> <HelloWorld />
-
+    <h1>Design System Experiment</h1>
     <DisplayLarge size="100" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
 import DisplayLarge from "./components/DisplayLarge";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     DisplayLarge
   }
 };
